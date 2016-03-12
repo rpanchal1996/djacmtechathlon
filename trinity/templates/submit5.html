@@ -227,15 +227,19 @@ integer b=1;<br/>
 integer c=1;<br/>
 integer sum=0;<br/>
 
-REPEAT THE FOLLOWING WHILE b < a <br/>
-  REPEAT THE FOLLOWING WHILE c < b <br/>
+WHILE b < a <br/>
+WHILE c < b <br/>
     IF a%c==0 <br/>
       ctr=ctr+1;<br/>
+    ENDIF <br/>
+
     c=c+1;<br/>
-  
+    END WHILE <br/>
   IF ctr>2<br/>
     sum=sum+b;<br/>
+    ENDIF <br/>
   b=b+1;<br/>
+  END WHILE <br/>
 
 OUTPUT sum;<br/>
 </p>

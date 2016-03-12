@@ -223,11 +223,15 @@
   <p> 
   integer a = output count <br/>
   integer b = output numberCopy<br/>
-  repeat the following while b is not equal to 0<br/>
+   WHILE b is not equal to 0<br/>
     If a > b then<br/>
       a = a - b<br/>
-    else<br/>
+    END IF<br/>
+    ELSE:<br/>
       b = b - a<br/>
+    END ELSE<br/>
+
+    END WHILE<br/>
   output a; </p>
   <form method="post" action='/submit4'>
                     {% csrf_token %}

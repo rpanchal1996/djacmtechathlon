@@ -229,19 +229,23 @@ integer a=sum //output of previous question<br/>
 integer b=0;<br/>
 integer ctr=0;<br/>
 integer temp=s;<br/>
-REPEAT THE FOLLOWING WHILE temp>0<br/>
+WHILE temp>0<br/>
   rem=temp%16;<br/>
   IF rem > 9<br/>
     rem=rem+47;<br/>
     arr[ctr]=(char)rem;<br/>
     ctr=ctr+1;<br/>
+  END IF <br/>
   ELSE<br/>
     arr[ctr]=rem;<br/>
     ctr=ctr+1;  <br/>
-REPEAT THE FOLLOWING TILL ctr < 0<br/>
+  END ELSE <br/>
+  END WHILE <br/>
+WHILE ctr > = 0<br/>
   PRINT (arr[ctr])<br/>
   ctr=ctr-1;<br/>
-
+END WHILE
+//THE OUTPUTS OF PRINT CONCATANATED IS THE ANSWER <br/>
   </p>
   <form method="post" action='/submit7'>
                     {% csrf_token %}
