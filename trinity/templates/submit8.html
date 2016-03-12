@@ -221,7 +221,20 @@
 <div class="jumbotron text-center">
   <h1>Question Number 3</h1> 
   <h2>SubQuestion b</h2> 
-  <p> You will insert algo here</p>
+  <p> 
+input N = output Sum<br/>
+integer a = 100<br/>
+integer b = 101<br/>
+integer c = 0<br/>
+Initialize counter = 2<br/>
+While counter <= N<br/>
+  c = a + b<br/>
+  a = b<br/>
+  b = c<br/>
+  N = N + 1 <br/>
+End while <br/>
+output c<br/>
+</p>
   <form method="post" action='/submit9'>
                     {% csrf_token %}
                     <ul>

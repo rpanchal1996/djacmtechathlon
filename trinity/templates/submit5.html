@@ -220,7 +220,25 @@
 <div class="jumbotron text-center">
   <h1>Question Number 2</h1> 
   <h2>SubQuestion b</h2> 
-  <p> You will insert algo here</p>
+  <p> 
+integer a=sum; //OUTPUT of previous question <br/>
+integer ctr=0;<br/>
+integer b=1;<br/>
+integer c=1;<br/>
+integer sum=0;<br/>
+
+REPEAT THE FOLLOWING WHILE b < a <br/>
+  REPEAT THE FOLLOWING WHILE c < b <br/>
+    IF a%c==0 <br/>
+      ctr=ctr+1;<br/>
+    c=c+1;<br/>
+  
+  IF ctr>2<br/>
+    sum=sum+b;<br/>
+  b=b+1;<br/>
+
+OUTPUT sum;<br/>
+</p>
   <form method="post" action='/submit6'>
                     {% csrf_token %}
                     <ul>

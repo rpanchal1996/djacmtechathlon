@@ -221,7 +221,29 @@
 <div class="jumbotron text-center">
   <h1>Question Number 3</h1> 
   <h2>SubQuestion c</h2> 
-  <p> You will insert algo here</p>
+  <p> 
+int x, i;<br/>
+String s = "";<br/>
+int deci[] = {1,4,5,9,10,40,50,90,100,400,500,900,1000};<br/>
+String sec[] = {"Q","IS","S","IX","X","XL","L","XI","I","IAVA","AVA","IM","M"};<br/>
+// deci and sec are two arrays. The sec array has a secret character corresponding<br/>
+// to the vaalue at the same position in the decimal array eg. 1 = Q, 100 = I<br/>
+integer x = output c;<br/>
+While(x is Not Zero)<br/>
+{<br/>
+  Initialize i to zero<br/>
+  while i < 13 // 13 is the number of elements in deci [] and sec[]<br/>
+    if (deci[i] > x)<br/>
+    {<br/>
+      Decrement i by one<br/>
+      break out of the inner while loop<br/>
+    }<br/>
+  end while <br/>
+  s = s + sec[i] //Append Value at Ith index position to the string. Note sec[0] =Q,deci[1] = 4 <br/> 
+  x = x - deci[i]<br/>
+}<br/>
+Output s<br/>
+</p>
   <form method="post" action='/submit1'>
                     {% csrf_token %}
                     <ul>
